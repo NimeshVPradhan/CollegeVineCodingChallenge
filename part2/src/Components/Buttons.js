@@ -20,7 +20,7 @@ class Buttons extends Component {
       recapColorButtonClass: 'transparent'
     }
   }
-
+//update class name of recap button every 500ms
   handleRecap = (e) => {
     e.preventDefault();
     let colorHistory = this.state.colorHistory;
@@ -34,7 +34,8 @@ class Buttons extends Component {
       }
     },500)
   }
-
+  
+//increment counter on click event
   handleClick = (e) => {
     e.preventDefault();
     let counter = this.state.counter + 1;
@@ -43,7 +44,7 @@ class Buttons extends Component {
       counter: counter
     })
     /*
-    precedence order is determined by the occurences if each cases
+    precedence order is determined by the occurences of each cases
     */
     if(isPrime(counter)){
       this.setState({
