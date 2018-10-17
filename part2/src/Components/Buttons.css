@@ -1,0 +1,30 @@
+input {
+  height: 100px;
+  width: 100px;
+  margin: 10px 10px 10px 10px;
+}
+
+#clickMe {
+  border: 5px solid black
+}
+
+#recap {
+  transition: background-color 0.1s ease-out;
+}
+
+.transparent {
+  background-color: none
+}
+
+.blue {
+  background-color: blue
+}
+
+.green {
+  background-color: green
+}
+
+.shadow {
+  box-shadow: 7px 7px 5px 0px rgba(0,0,0,0.49);
+  border-radius: 100px;
+}
